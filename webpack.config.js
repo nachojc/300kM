@@ -6,4 +6,4 @@ const enviroment = (indice > 0) ? process.argv[indice] : 'dev';
 
 process.env.ENV === enviroment;
 
-module.exports = require('./config/webpack.' + enviroment)
+module.exports = require('./config/webpack/webpack.' + enviroment)
