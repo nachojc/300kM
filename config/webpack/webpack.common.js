@@ -14,13 +14,15 @@ module.exports = {
         extensions: ['.ts', '.js', '.png', '.scss']
     },
     module: {
+        exprContextCritical: false,
         rules: [{
                 test: /\.ts$/,
                 loaders: [
                     'awesome-typescript-loader',
                     'angular2-template-loader',
                     'angular2-router-loader'
-                ]
+                ],
+                exclude: [/\.(e2e|spec)\.ts$/, /node_modules/, /test/]
             },
             {
                 test: /\.html$/,
@@ -51,7 +53,7 @@ module.exports = {
         new webpack.ContextReplacementPlugin(
             // The (\\|\/) piece accounts for path separators in *nix and Windows
             /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
-            helpers.root('./src'), // location of your src
+            helpers.root('../src'), // location of your src
             {} // a map of your routes
         ),
 
