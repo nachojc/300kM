@@ -1,12 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.club300km.main" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>main</name>
+    <name>300 kM</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Moteros
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
-    </author>
+    <author email="dnachojc@ipsoft.es" href="http://www.ipsoft.es">Nacho</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -16,6 +14,10 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <platform name="android">
+        <icon qualifier="ldpi" src="src/res/icon/android/icon-36-ldpi.png" />
+        <icon qualifier="mdpi" src="src/res/icon/android/icon-48-mdpi.png" />
+        <icon qualifier="hdpi" src="src/res/icon/android/icon-72-hdpi.png" />
+        <icon qualifier="xhdpi" src="src/res/icon/android/icon-96-xhdpi.png" />
         <allow-intent href="market:*" />
     </platform>
     <platform name="ios">

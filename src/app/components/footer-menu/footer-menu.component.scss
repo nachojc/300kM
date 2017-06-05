@@ -1,0 +1,17 @@
+:host {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    background: #2b3135;
+}
+
+icon-menu {
+    color: #ffffff;
+    &:hover {
+        opacity: 0.5;
+    }
+}
