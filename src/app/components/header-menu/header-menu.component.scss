@@ -1,0 +1,43 @@
+:host {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);
+    img {
+        max-height: 36px;
+    }
+    &>div {
+        flex: 1 1;
+        padding-left: 48px;
+        display: flex;
+        justify-content: center;
+        transition: padding-left 2s;
+    }
+    input {
+        width: 0;
+        border: goldenrod;
+        border-bottom: 1px solid;
+        transition: width 2s, flex 2s;
+    }
+    &.active {
+        &>div {
+            padding-left: 8px;
+        }
+        input {
+            width: 100%;
+            flex: 1 1;
+        }
+    }
+}
+
+icon-menu {
+    color: #000;
+    &:hover {
+        opacity: 0.5;
+    }
+}

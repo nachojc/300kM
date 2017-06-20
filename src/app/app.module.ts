@@ -10,6 +10,7 @@ import { UIModule } from './modules/ui/ui.module';
 
 
 import { AppComponent } from './core/app.component';
+import { HeaderMenuComponent } from './components/header-menu/header-menu.component'
 import { FooterMenuComponent } from './components/footer-menu/footer-menu.component'
 
 
@@ -31,6 +32,7 @@ import { PremiumPageComponent } from './core/premiumPage/premium-page.component'
     AppComponent,
     MainPageComponent,
     PremiumPageComponent,
+    HeaderMenuComponent,
     FooterMenuComponent
   ],
   providers: [Location, 

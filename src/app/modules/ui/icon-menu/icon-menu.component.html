@@ -1,3 +1,2 @@
-<i *ngIf="icon" class="flaticon-{{icon}}"></i>
-
-<span>{{label}}</span>
+<icon icon="{{icon}}"></icon>
+<span *ngIf="label">{{label}}</span>

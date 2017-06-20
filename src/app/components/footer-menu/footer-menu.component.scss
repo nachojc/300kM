@@ -1,3 +1,4 @@
+@import '../../../styles/vars';
 :host {
     position: fixed;
     bottom: 0;
@@ -10,8 +11,17 @@
 }
 
 icon-menu {
-    color: #ffffff;
-    &:hover {
+    color: $tri-color;
+    height: 60px;
+    border-bottom: 2px solid transparent;
+    &:hover,
+    &:active {
         opacity: 0.5;
+        border-bottom-color: var()
     }
+}
+
+icon-circle {
+    background-color: $sec-color;
+    color: $tri-color
 }
