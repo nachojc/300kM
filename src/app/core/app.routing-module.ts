@@ -13,6 +13,11 @@ const appRoutes: Routes = [
     data: { title: '300 kM' }
   },
   {
+    path: 'activity',
+    loadChildren: '../modules/activityPage/activity-page.module#ActivityModule',
+    data: { title: 'Activity at 300 kM' }
+  },
+  {
     path: 'setting',
     component: PremiumPageComponent,
     data: { title: '300 kM' }

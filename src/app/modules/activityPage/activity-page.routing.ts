@@ -2,29 +2,23 @@ import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
-import { LoginPageComponent }   from './login-page.component';
-import { LoginComponent }       from '../../components/login/login.component';
-
+import { ActivityPageComponent }   from './activity-page.component';
 import {AuthGuard, AuthService} from '../../core/security';
 
 const routes: Routes = [
   {
     path: '',
-    component: LoginPageComponent,
+    component: ActivityPageComponent,
     children: [
       {
         path: '',
         children: [
 //          { path: 'crises', component: ManageCrisesComponent },
 //          { path: 'heroes', component: ManageHeroesComponent },
-          { path: '', component: LoginComponent }
+          { path: '', component: ActivityPageComponent }
         ]
       }
     ]
-  },
-  {
-    path: 'demo',
-    component: LoginComponent
   }
 ];
 
@@ -39,4 +33,4 @@ const routes: Routes = [
   ],
   providers: [AuthGuard,AuthService]
 })
-export class LoginRoutingModule { }
+export class ActivityRoutingModule { }

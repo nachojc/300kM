@@ -13,22 +13,20 @@
     }
     &>div {
         flex: 1 1;
-        padding-left: 48px;
+        padding-left: 80px;
         display: flex;
         justify-content: center;
         transition: padding-left 2s;
     }
-    input {
+    ip-input {
         width: 0;
-        border: goldenrod;
-        border-bottom: 1px solid;
         transition: width 2s, flex 2s;
     }
     &.active {
         &>div {
-            padding-left: 8px;
+            padding: 8px;
         }
-        input {
+        ip-input {
             width: 100%;
             flex: 1 1;
         }
@@ -37,6 +35,7 @@
 
 icon-menu {
     color: #000;
+    width: 64px;
     &:hover {
         opacity: 0.5;
     }

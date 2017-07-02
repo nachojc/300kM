@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import {APP_BASE_HREF, HashLocationStrategy, Location, LocationStrategy} from '@angular/common';
+import { HttpModule }    from '@angular/http';
+
 
 import { AppRoutingModule } from './core/app.routing-module';
 
@@ -24,9 +26,9 @@ import { PremiumPageComponent } from './core/premiumPage/premium-page.component'
 @NgModule({
   imports: [
     BrowserModule,
-//    LoginModule,
     AppRoutingModule,
-    UIModule
+    UIModule,
+    HttpModule
   ],
   declarations: [
     AppComponent,

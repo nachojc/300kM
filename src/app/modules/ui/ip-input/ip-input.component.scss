@@ -1,4 +1,7 @@
 input {
-    border: .1rem solid;
+    border: 0;
     border-color: var(--pri-color);
+    border-bottom: .05rem solid;
+    font-size: 1.2rem;
+    width: 100%;
 }

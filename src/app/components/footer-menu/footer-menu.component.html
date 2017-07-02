@@ -1,7 +1,9 @@
-<icon-menu label="aventuras" icon="route"></icon-menu>
-<icon-menu label="FEED" icon="calendar"></icon-menu>
+<icon-menu label="events" icon="route"></icon-menu>
+<icon-menu label="news" icon="calendar"></icon-menu>
 <icon-circle icon="add"></icon-circle>
-<icon-menu label="actividad" icon="sign"></icon-menu>
+<a [routerLink]="['activity']">
+    <icon-menu label="activity" icon="sign"></icon-menu>
+</a>
 <a [routerLink]="['login']">
-    <icon-menu label="tu" icon="user"></icon-menu>
+    <icon-menu label="you" icon="user"></icon-menu>
 </a>
