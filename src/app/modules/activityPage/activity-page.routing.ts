@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { ActivityPageComponent }   from './activity-page.component';
-import {AuthGuard, AuthService} from '../../core/security';
+import { ActivityComponent }   from '../../components/activity/activity.component';
+
 
 const routes: Routes = [
   {
@@ -15,7 +16,7 @@ const routes: Routes = [
         children: [
 //          { path: 'crises', component: ManageCrisesComponent },
 //          { path: 'heroes', component: ManageHeroesComponent },
-          { path: '', component: ActivityPageComponent }
+          { path: '', component: ActivityComponent }
         ]
       }
     ]
@@ -31,6 +32,6 @@ const routes: Routes = [
   exports: [
     RouterModule
   ],
-  providers: [AuthGuard,AuthService]
+  providers: []
 })
 export class ActivityRoutingModule { }
