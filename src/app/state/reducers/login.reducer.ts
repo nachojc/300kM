@@ -17,15 +17,17 @@ export const Login:ActionReducer<LoginModel> = (state = initialState, action: Ac
             let data = action.payload;
 
             return data;
-
-        case LoginActionTypes.LOGOUT:
-
-            return {
-                state: 10,
+        
+        case LoginActionTypes.LOGIN_ERRROR:
+        return {
+                state: -1,
                 status: false,
                 uuid: '',
                 user: ''
             };
+        case LoginActionTypes.LOGOUT:
+
+            
 
         default:
             return state;

@@ -1,7 +1,59 @@
+@import '../../../../styles/vars';
+:host {
+    &>div {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        &>span {
+            height: 32px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
 input {
     border: 0;
-    border-color: var(--pri-color);
-    border-bottom: .05rem solid;
-    font-size: 1.2rem;
-    width: 99%;
+    border-bottom: $sec-color .05rem solid;
+    font-size: 1rem;
+    height: 32px;
+    z-index: 1;
+    background: transparent;
+}
+
+label {
+    color: $pri-color;
+    white-space: nowrap;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    transition: top 2s, left 2s;
+}
+
+:host.icon.no-val label {
+    left: 36px;
+}
+
+:host.icon input {
+    padding-left: 36px;
+}
+
+:host.no-val label {
+    top: 36px;
+}
+
+:host.no-label>div>span {
+    height: 0;
+}
+
+input:focus+span label {
+    top: 6px;
+    left: 8px;
+}
+
+icon {
+    color: $sec-color;
+    left: 6px;
+    top: 36px;
+    position: absolute;
 }

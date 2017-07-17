@@ -6,10 +6,11 @@ import { Effect, Actions, toPayload } from "@ngrx/effects";
 import { Action } from '@ngrx/store';
 
 import { Observable } from 'rxjs/Observable';
+import { of } from 'rxjs/observable/of';
 
 
-import {LoginActionTypes,LoginCompleteAction} from "../actions/login.action";
-import {LoginModel} from "../models/login.model";
+import { LoginActionTypes, LoginCompleteAction, LoginErrorAction } from "../actions/login.action";
+import { LoginModel } from "../models/login.model";
 import { LoginService } from "../../services/login.service";
 
 
@@ -25,9 +26,9 @@ export class LoginEffect {
         .map(toPayload)
         .switchMap((data) => {
 
-            return  this.login.checkLogin(data)
-                .map(res => {
-                    return new LoginCompleteAction(res.json())});;
+            return this.login.checkLogin(data)
+                .map(res => new LoginCompleteAction(res.json()))
+                .catch(error => of(new LoginErrorAction(error)))
         })
 
 

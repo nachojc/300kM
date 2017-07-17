@@ -35,8 +35,43 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
     <title>Club 300 kM</title>
     <style>
+        @font-face {
+            font-family: 'BebasNeue';
+            font-style: normal;
+            font-weight: normal;
+            src: url('./assets/font/BebasNeue.woff') format('woff');
+        }
+        
+        @font-face {
+            font-family: 'Lato';
+            src: url('./assets/font/lato/Lato-Regular.eot');
+            /* IE9 Compat Modes */
+            src: url('./assets/font/lato/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('./assets/font/lato/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+            url('./assets/font/lato/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+            url('./assets/font/lato/Lato-Regular.ttf') format('truetype');
+            font-style: normal;
+            font-weight: normal;
+            text-rendering: optimizeLegibility;
+        }
+        
         body {
             margin: 0;
+        }
+        
+        body,
+        a,
+        input {
+            font-family: "Lato";
+        }
+        
+        button,
+        label {
+            font-family: "BebasNeue";
+        }
+        
+        a {
+            text-decoration: none;
         }
     </style>
 </head>

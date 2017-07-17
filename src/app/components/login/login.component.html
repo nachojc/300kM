@@ -1,9 +1,15 @@
 <div>
-    <label>User:</label>
-    <input type="text" [(ngModel)]="user" />
+    <ip-input [(inputModel)]="user" label="ADVENTURE NAME" icon="user" required></ip-input>
 </div>
 <div>
-    <label>Password:</label>
-    <input type="password" [(ngModel)]="pwd" />
+    <ip-input [(inputModel)]="mail" label="EMAIL" icon="folder" required type="email"></ip-input>
 </div>
-<button (click)="login()">Login</button>
+<div>
+    <ip-input [(inputModel)]="pwd" label="PASSWORD" icon="locked-4" required type="password"></ip-input>
+</div>
+<ip-button (click)="login($event)" label="Login" [disabled]="(!user || !pwd)"></ip-button>
+<div class="label">
+    <label>entry with</label>
+</div>
+<ip-button (click)="facebook($event)" label="Facebook"></ip-button>
+<ip-button (click)="google($event)" label="Google+"></ip-button>

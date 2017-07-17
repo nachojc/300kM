@@ -7,19 +7,19 @@ import {ActivityPageComponent} from './activity-page.component';
 import {ActivityRoutingModule} from './activity-page.routing';
 
 import { ActivityComponent }   from '../../components/activity/activity.component';
-import { CardActivityComponent }   from '../../components/card-activity/card-activity.component';
+import { CardsModule }   from '../cards/cards.module';
 
 
 @NgModule({
     imports:[
         CommonModule,
         ActivityRoutingModule,
-        UIModule
+        UIModule,
+        CardsModule
     ],
     declarations:[
         ActivityPageComponent,
-        ActivityComponent,
-        CardActivityComponent
+        ActivityComponent
     ],
     providers:[]
 })

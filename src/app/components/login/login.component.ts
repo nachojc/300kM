@@ -11,6 +11,7 @@ import  {LoginActionTypes} from '../../state/actions/login.action';
 })
 export class LoginComponent {
   public user: string;
+  public mail: string;
   public pwd: string;
 
   constructor(private _store: Store<any>) {
@@ -20,5 +21,11 @@ export class LoginComponent {
     if (this.user && this.pwd) {
       this._store.dispatch({ type: LoginActionTypes.LOGIN_CHECK, payload: { usr: this.user, pwd: this.pwd } })
     }
+  }
+  facebook(){
+
+  }
+  google(){
+    
   }
 }

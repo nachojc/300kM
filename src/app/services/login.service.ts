@@ -1,4 +1,4 @@
-import 'rxjs/add/operator/map';
+
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 
@@ -16,7 +16,7 @@ export class LoginService {
     constructor(private http: Http) { }
 
     checkLogin(params: any): Observable<any> {
-        return this.http.post(`${this.API_PATH}`, params)
+        return this.http.post(`${this.API_PATH}`, params);
             
     }
 

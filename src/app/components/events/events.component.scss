@@ -1,0 +1,6 @@
+@import '../../../styles/vars';
+:host {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}

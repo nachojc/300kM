@@ -20,10 +20,12 @@
     };
 
     function postFn(req, res) {
+        console.log(req.body);
         res.json(data);
     }
 
     function getFn(req, res) {
+        console.log(req.body);
         res.json({});
     }
 

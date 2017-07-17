@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Store } from '@ngrx/store';
+
 import { LoginActionTypes } from '../../state/actions/login.action';
 
 @Component({

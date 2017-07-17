@@ -8,6 +8,7 @@ import {IconCircleComponent} from './icon-circle/icon-circle.component';
 import {AvatarCircleComponent} from './avarar-circle/avarar-circle.component';
 import {IconMenuComponent} from './icon-menu/icon-menu.component';
 import {IpInputComponent} from './ip-input/ip-input.component';
+import {IpButtonComponent} from './ip-button/ip-button.component';
 
 
 
@@ -21,11 +22,13 @@ import {IpInputComponent} from './ip-input/ip-input.component';
         IconCircleComponent,
         IconMenuComponent,
         AvatarCircleComponent,
-        IpInputComponent
+        IpInputComponent,
+        IpButtonComponent
     ],
     exports:[
         IconMenuComponent,
         IpInputComponent,
+        IpButtonComponent,
         IconCircleComponent,
         AvatarCircleComponent
         ],

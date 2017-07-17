@@ -12,6 +12,10 @@ import { EffectsModule } from "@ngrx/effects";
 import {LoginPageComponent} from './login-page.component';
 import {LoginRoutingModule} from './login-page.routing';
 
+import { UIModule } from '../../modules/ui/ui.module';
+// ID de cliente google    370345460828-eek0vj5jjlt01kft83p5rdi38nqnin8a.apps.googleusercontent.com
+// Este es tu secreto de cliente:  0iJSBvXpBsnLdGCpUDA9zTBW
+
 import {LoginComponent} from '../../components/login/login.component';
 
 import {Login} from '../../state/reducers/login.reducer';
@@ -25,6 +29,7 @@ import { LoginService } from "../../services/login.service";
         CommonModule,
         FormsModule,
         LoginRoutingModule,
+        UIModule,
         StoreModule.provideStore({Login}),
         EffectsModule.run(LoginEffect)
     

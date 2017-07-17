@@ -18,6 +18,16 @@ const appRoutes: Routes = [
     data: { title: 'Activity at 300 kM' }
   },
   {
+    path: 'news',
+    loadChildren: '../modules/newsPage/news-page.module#NewsModule',
+    data: { title: 'News at 300 kM' }
+  },
+  {
+    path: 'events',
+    loadChildren: '../modules/eventsPage/events-page.module#EventsModule',
+    data: { title: 'Events at 300 kM' }
+  },
+  {
     path: 'setting',
     component: PremiumPageComponent,
     data: { title: '300 kM' }

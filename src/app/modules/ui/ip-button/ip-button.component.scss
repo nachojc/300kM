@@ -1,0 +1,17 @@
+@import '../../../../styles/vars';
+:host {
+    display: flex;
+}
+
+button {
+    flex: 1 1;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 14px;
+    border: $sec-color 0.05rem solid;
+    background-color: $pri-btn-color;
+}
+
+:host.desabled button {
+    background-color: $sec-btn-color;
+}
