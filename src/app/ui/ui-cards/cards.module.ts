@@ -1,7 +1,7 @@
 import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 
-import {UIModule} from '../ui/ui.module';
+import {UIModule} from '../../ui/ui-commons/ui.module';
 
 import {CardActivityComponent} from './card-activity/card-activity.component';
 

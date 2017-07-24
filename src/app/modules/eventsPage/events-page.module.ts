@@ -1,13 +1,13 @@
 import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 
-import { UIModule } from '../../modules/ui/ui.module';
+import { UIModule } from '../../ui/ui-commons/ui.module';
 
 import {EventsPageComponent} from './events-page.component';
 import {EventsRoutingModule} from './events-page.routing';
 
 import { EventsComponent }   from '../../components/events/events.component';
-import { CardsModule }   from '../cards/cards.module';
+import { CardsModule }   from '../../ui/ui-cards/cards.module';
 
 
 @NgModule({

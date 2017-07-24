@@ -1,13 +1,13 @@
 import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
 
-import { UIModule } from '../../modules/ui/ui.module';
+import { UIModule } from '../../ui/ui-commons/ui.module';
 
 import {ActivityPageComponent} from './activity-page.component';
 import {ActivityRoutingModule} from './activity-page.routing';
 
 import { ActivityComponent }   from '../../components/activity/activity.component';
-import { CardsModule }   from '../cards/cards.module';
+import { CardsModule }   from '../../ui/ui-cards/cards.module';
 
 
 @NgModule({

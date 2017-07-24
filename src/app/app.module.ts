@@ -8,7 +8,7 @@ import { HttpModule }    from '@angular/http';
 import { AppRoutingModule } from './core/app.routing-module';
 
 import { LoginModule } from './modules/loginPage/login-page.module';
-import { UIModule } from './modules/ui/ui.module';
+import { UIModule } from './ui/ui-commons/ui.module';
 
 
 import { AppComponent } from './core/app.component';

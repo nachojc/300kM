@@ -12,7 +12,7 @@ import { EffectsModule } from "@ngrx/effects";
 import {LoginPageComponent} from './login-page.component';
 import {LoginRoutingModule} from './login-page.routing';
 
-import { UIModule } from '../../modules/ui/ui.module';
+import { UIModule } from '../../ui/ui-commons/ui.module';
 // ID de cliente google    370345460828-eek0vj5jjlt01kft83p5rdi38nqnin8a.apps.googleusercontent.com
 // Este es tu secreto de cliente:  0iJSBvXpBsnLdGCpUDA9zTBW
 
