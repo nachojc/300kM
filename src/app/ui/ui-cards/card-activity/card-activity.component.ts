@@ -9,5 +9,6 @@ export class CardActivityComponent {
   public nameTitle:string="Diana Santos";
   public textTitle:string="ha creado un evento";
   public timeSlot:string="25 min ago";
+  public textnumber:string="+3";
 
 }
