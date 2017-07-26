@@ -1,5 +1,5 @@
 <div>
-    <input [(ngModel)]="inputModel" (change)="inputChange($event)" #ctrl="ngModel" [disabled]="disabled" [required]="required" [type]="type" />
+    <input [(ngModel)]="inputModel" (keyup)="inputChange($event)" #ctrl="ngModel" [disabled]="disabled" [required]="required" [type]="type" />
     <span>
         <div *ngIf="label"><icon *ngIf="icon" [icon]="icon"></icon><label>{{label}}</label></div>
     </span>

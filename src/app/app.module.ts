@@ -7,7 +7,6 @@ import { HttpModule }    from '@angular/http';
 
 import { AppRoutingModule } from './core/app.routing-module';
 
-import { LoginModule } from './modules/loginPage/login-page.module';
 import { UIModule } from './ui/ui-commons/ui.module';
 
 
@@ -17,7 +16,7 @@ import { FooterMenuComponent } from './components/footer-menu/footer-menu.compon
 
 
 import { MainPageComponent } from './core/mainPage/main-page.component';
-import { PremiumPageComponent } from './core/premiumPage/premium-page.component';
+import { PageNotFoundComponent } from './core/not-found.component';
 
 
 
@@ -33,9 +32,9 @@ import { PremiumPageComponent } from './core/premiumPage/premium-page.component'
   declarations: [
     AppComponent,
     MainPageComponent,
-    PremiumPageComponent,
     HeaderMenuComponent,
-    FooterMenuComponent
+    FooterMenuComponent,
+    PageNotFoundComponent
   ],
   providers: [Location, 
   //ios 
