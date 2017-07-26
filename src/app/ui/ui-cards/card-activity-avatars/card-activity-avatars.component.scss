@@ -41,6 +41,19 @@
         color: $sec-color;
         margin-right: 8px;
     }
+    .avatares img {
+        /* cambia estos dos valores para definir el tamaño de tu círculo */
+        height: 75px;
+        width: 75px;
+        /* los siguientes valores son independientes del tamaño del círculo */
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 50%;
+        background-size: 100% auto;
+        padding-top: 10px;
+        position: relative;
+        left: -45px;
+    }
 }
 
 h2,
