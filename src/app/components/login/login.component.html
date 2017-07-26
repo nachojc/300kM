@@ -1,13 +1,13 @@
 <div>
-    <ip-input [(inputModel)]="user" label="ADVENTURE NAME" icon="user" required></ip-input>
+    <ip-input [(inputModel)]="user" (change)="pwdChange($event)" label="ADVENTURE NAME" icon="user" required></ip-input>
 </div>
 <div>
-    <ip-input [(inputModel)]="mail" label="EMAIL" icon="folder" required type="email"></ip-input>
+    <ip-input [(inputModel)]="mail" (change)="pwdChange($event)" label="EMAIL" icon="folder" required type="email"></ip-input>
 </div>
 <div>
-    <ip-input [(inputModel)]="pwd" label="PASSWORD" icon="locked-4" required type="password"></ip-input>
+    <ip-input [(inputModel)]="pwd" (change)="pwdChange($event)" label="PASSWORD" icon="locked-4" required type="password"></ip-input>
 </div>
-<ip-button (click)="login($event)" label="Login" [disabled]="(!user || !pwd)"></ip-button>
+<ip-button (click)="login($event)" label="Login" [disabled]="loginBtn"></ip-button>
 <div class="label">
     <label>entry with</label>
 </div>

@@ -19,8 +19,10 @@ export class IpInputComponent {
   @Input() inputModel: any;
 
   @Output() inputModelChange: EventEmitter<string> = new EventEmitter();
+  @Output() change: EventEmitter<string> = new EventEmitter();
 
   inputChange(e: any) {
     this.inputModelChange.emit(this.inputModel);
+    this.change.emit(this.inputModel);
   }
 }

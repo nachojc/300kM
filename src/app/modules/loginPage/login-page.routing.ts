@@ -1,11 +1,11 @@
-import { NgModule }             from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
-import { LoginPageComponent }   from './login-page.component';
-import { LoginComponent }       from '../../components/login/login.component';
+import { LoginPageComponent } from './login-page.component';
+import { LoginComponent } from '../../components/login/login.component';
 
-import {AuthGuard, AuthService} from '../../core/security';
+import { AuthGuard, AuthService } from '../../core/security';
 
 const routes: Routes = [
   {
@@ -15,16 +15,10 @@ const routes: Routes = [
       {
         path: '',
         children: [
-//          { path: 'crises', component: ManageCrisesComponent },
-//          { path: 'heroes', component: ManageHeroesComponent },
           { path: '', component: LoginComponent }
         ]
       }
     ]
-  },
-  {
-    path: 'demo',
-    component: LoginComponent
   }
 ];
 
@@ -37,6 +31,6 @@ const routes: Routes = [
   exports: [
     RouterModule
   ],
-  providers: [AuthGuard,AuthService]
+  providers: [AuthGuard, AuthService]
 })
 export class LoginRoutingModule { }
