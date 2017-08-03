@@ -5,6 +5,7 @@ import {UIModule} from '../../ui/ui-commons/ui.module';
 
 import {CardActivityComponent} from './card-activity/card-activity.component';
 import {CardActivityAvatarsComponent} from './card-activity-avatars/card-activity-avatars.component';
+import {CardAEventsComponent} from './card-events/card-events.component';
 
 
 
@@ -15,11 +16,13 @@ import {CardActivityAvatarsComponent} from './card-activity-avatars/card-activit
     ],
     declarations:[
         CardActivityComponent,
-        CardActivityAvatarsComponent
+        CardActivityAvatarsComponent,
+        CardAEventsComponent
     ],
     exports:[
         CardActivityComponent,
-        CardActivityAvatarsComponent
+        CardActivityAvatarsComponent,
+        CardAEventsComponent
         ],
     providers:[]
 })
