@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './card-events.component.html',
   styleUrls: ['./card-events.component.scss']
 })
-export class CardAEventsComponent implements OnInit {
+export class CardEventsComponent implements OnInit {
   @Input() avatar: string;
   @Input() images: string[];
 
